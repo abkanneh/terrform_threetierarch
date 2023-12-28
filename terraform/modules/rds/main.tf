@@ -1,7 +1,7 @@
 # # Create RDS Instance
 
 resource "aws_db_subnet_group" "db-subnet-group" {
-  name       = "db_subnet_group"
+  name       = "db_subnet_groups"
   subnet_ids = var.subnets.*.id
 
   tags = {
